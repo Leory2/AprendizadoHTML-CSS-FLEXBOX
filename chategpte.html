@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Login Form</h2>
+        <div class="question">
+            <label for="username">Username:</label>
+            <input id="username" type="text" required>
+        </div>
+        
+        <div class="question">
+            <label for="password">Password:</label>
+            <input id="password" type="password" required>
+        </div>
+
+        <div class="question">
+            <label for="email">Email:</label>
+            <input id="email" type="email" required>
+        </div>
+
+        <div class="question">
+            <label for="state">State:</label>
+            <select id="state" required>
+                <option value="" selected disabled>Select State</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Brasília">Brasília</option>
+                <option
