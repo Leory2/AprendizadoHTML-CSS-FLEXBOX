@@ -12,16 +12,21 @@
       display: flex;
       flex-direction: column;
 
-      align-items: center;
+      align-items: flex-end;
     }
 
-    .flex .item:nth-of-type(1),
-    .flex .item:nth-of-type(4) {
-      align-self: flex-start;
+    .flex .item:nth-of-type(1)
+    {
+     align-self: flex-start;
     }
-
+       
+    .flex .item:nth-of-type(3)
+    {
+      align-self: inherit;
+    }  
+    
     .flex .item:nth-of-type(5) {
-      align-self: flex-end;
+      align-self: flex-center;
     }
   </style>
 </head>
