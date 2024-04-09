@@ -8,31 +8,34 @@
   <title>Flex-box</title>
 
   <style>
-    nav {
+    nav 
+    {
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    nav ul 
+    {
+     font-size: 3rem;
+      list-style:none; 
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
 
-    nav ul {
-      font-size: 2.5rem;
-      list-style: none;
-
-      display: flex;
-      align-items: baseline;
     }
-
-    nav ul li {
-      margin: 0 10px;
-    }
-
-    nav ul li:nth-of-type(2) {
-      order: 1;
-    }
-
-    nav ul li:nth-of-type(3) {
-      font-size: 3.5rem;
-    }
+   nav ul li
+   {
+    margin: 0 5px; 
+   
+  }
+  nav ul li:nth-of-type(2)
+   {
+    order: 1;
+   
+  }
+  nav ul li:nth-of-type(3)
+   {
+     font-size: 3.5rem;
+   
+  }
   </style>
 </head>
 
@@ -40,24 +43,21 @@
 
   <header class="flex">
     <nav>
-      <img src="https://vidafullstack.com.br/wp-content/uploads/2019/08/logo-4.png" alt="">
+      <img src="assets/image.png" alt="">
       <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-
-        <li>
-          <a href="#">Sobre</a>
-        </li>
-
-        <li>
-          <a href="#">Portfólio</a>
-        </li>
-
-        <li>
-          <a href="#">Contato</a>
-        </li>
-      </ul>
+       <li>
+        <a href="#">home</a>
+       </li>
+         <li>
+          <a href="#">sobre</a>
+         </li>        
+         <li>
+            <a href="#">portifolio</a>
+          </li>
+          <li>
+            <a href="#">contatos</a>
+          </li>
+        </ul>
     </nav>
   </header>
 
